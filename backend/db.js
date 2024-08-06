@@ -1,13 +1,9 @@
 const mysql = require('mysql2');
+require('dotenv').config(); // Garanta que essa linha esteja presente se você estiver usando .env
+console.log('String de Conexão:', process.env.MYSQL_URL);
+const connection = mysql.createConnection(process.env.MYSQL_URL);
 
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root', 
-  password: 'f01f0201', 
-  database: 'explore_maranhao_db' 
-});
-
-connection.connect((err) => {
+connection.connect(err => {
   if (err) {
     console.error('Erro ao conectar ao banco de dados:', err.stack);
     return;
