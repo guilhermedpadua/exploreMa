@@ -48,7 +48,7 @@ const DestinoList = () => {
         </div>
       ) : (
         <div className="destino-list">
-          <h1>Explore Maranhão</h1>
+          <h1>ExploreMa</h1>
           <div className="search-container">
             <input
               type="text"
