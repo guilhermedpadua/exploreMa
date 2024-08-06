@@ -1,6 +1,6 @@
 const mysql = require('mysql2');
-require('dotenv').config(); // Garanta que essa linha esteja presente se você estiver usando .env
-console.log('String de Conexão:', process.env.MYSQL_URL);
+require('dotenv').config();
+
 const connection = mysql.createConnection(process.env.MYSQL_URL);
 
 connection.connect(err => {
