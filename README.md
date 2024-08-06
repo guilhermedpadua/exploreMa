@@ -1,4 +1,4 @@
-# Guia Turístico Online do Maranhão
+# Guia Turístico Online do Maranhão (link vercel: https://explore-ma-9p7q.vercel.app/)
 
 ## Descrição
 
@@ -22,17 +22,17 @@ O ExploreMaranhão é um projeto que permite aos visitantes explorar os destinos
 
 ## Imagens
 
-### Página Destino List
+### Lista de Destinos
 
-![Página Destino List](imagens/destino-list.png)
+![Página Destino List](./frontend/src/imagens/destino-list.png)
 
 ### Mapa
 
-![Mapa](imagens/mapa.png)
+![Mapa](./frontend/src/imagens/mapa.png)
 
-### Modal da Lista de Atrativos
+### Atrativos
 
-![Modal da Lista de Atrativos](imagens/modal-atrativos.png)
+![Modal da Lista de Atrativos](./frontend/src/imagens/modal-atrativos.png)
 
 ## Como Rodar o Projeto
 
