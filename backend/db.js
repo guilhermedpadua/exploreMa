@@ -1,8 +1,12 @@
 const mysql = require('mysql2');
-require('dotenv').config();
 
-console.log('URL de Conexão:', process.env.MYSQL_URL);
-const connection = mysql.createConnection(process.env.MYSQL_URL);
+const connection = mysql.createConnection({
+  host: 'roundhouse.proxy.rlwy.net',
+  user: 'root',
+  password: 'NERUIiJvOaTxTYEqFRBBJgULoCgeizBs',
+  database: 'railway',
+  port: 14323,
+});
 
 connection.connect(err => {
   if (err) {
