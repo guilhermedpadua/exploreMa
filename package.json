@@ -2,6 +2,7 @@
   "name": "explorema",
   "version": "1.0.0",
   "scripts": {
+    "postinstall": "npm install rxjs",
     "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
     "start:frontend": "react-scripts start",
     "start:backend": "nodemon backend/server.js",
