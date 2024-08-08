@@ -6,7 +6,7 @@
     "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
     "start:frontend": "react-scripts start",
     "start:backend": "nodemon backend/server.js",
-    "build": "react-scripts build --output-path build && ls node_modules/rxjs/dist/cjs",
+    "build": "react-scripts build --output-path build && find node_modules/rxjs",
     "vercel-build": "npm run build",
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
     "dev:frontend": "react-scripts start",
