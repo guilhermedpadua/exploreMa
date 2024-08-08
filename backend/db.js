@@ -1,6 +1,8 @@
 const mysql = require('mysql2');
 require('dotenv').config();
 
+console.log('URL de Conexão:', process.env.MYSQL_URL);  // Adicione esta linha para depuração
+
 const connection = mysql.createConnection(process.env.MYSQL_URL);
 
 connection.connect(err => {
