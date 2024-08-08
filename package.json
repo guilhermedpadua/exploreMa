@@ -2,7 +2,7 @@
     "name": "explorema",
     "version": "1.0.0",
     "scripts": {
-      "start": "npm run start:prod",
+      "start": "npm run start:backend",
       "start:frontend": "serve -s build",
       "start:backend": "nodemon backend/server.js",
       "build": "react-scripts build --output-path build",
@@ -10,7 +10,7 @@
       "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
       "dev:frontend": "react-scripts start",
       "dev:backend": "nodemon backend/server.js",
-      "start:prod": "npm run build:backend && npm run start:frontend & npm run start:backend",
+      "start:prod": "npm run build:backend && npm run start:frontend && node backend/server.js",
       "build:backend": "echo \"No build step for backend\""
     },
     "dependencies": {
@@ -31,6 +31,7 @@
     },
     "devDependencies": {
       "nodemon": "^3.1.4"
-    }
+    },
+    "proxy": "http://localhost:10000"
   }
   
